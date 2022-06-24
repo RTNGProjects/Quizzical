@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Quizzical/static/css/main.0c9fab8e.css",
-    "main.js": "/Quizzical/static/js/main.2271c797.js",
+    "main.css": "/Quizzical/static/css/main.14778c1c.css",
+    "main.js": "/Quizzical/static/js/main.5489a023.js",
     "index.html": "/Quizzical/index.html",
-    "main.0c9fab8e.css.map": "/Quizzical/static/css/main.0c9fab8e.css.map",
-    "main.2271c797.js.map": "/Quizzical/static/js/main.2271c797.js.map"
+    "main.14778c1c.css.map": "/Quizzical/static/css/main.14778c1c.css.map",
+    "main.5489a023.js.map": "/Quizzical/static/js/main.5489a023.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c9fab8e.css",
-    "static/js/main.2271c797.js"
+    "static/css/main.14778c1c.css",
+    "static/js/main.5489a023.js"
   ]
 }
