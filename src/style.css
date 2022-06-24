@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #F5F7FB;
+    position: relative;
+}
+
+/* =================
+   Typography 
+   ================= */
+p {
+    margin: 0;
+}
+
+.intro-title {
+    color: #293264
+}
+
+.score-msg {
+    color: #293264;
+    font-weight: 700;
+}
+
+.question {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #293264;
+}
+
+/* =================
+   Intro section 
+   ================= */
+   
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 0 .5em;
+}
+
+/* =================
+   Question/Answer Card main-content  
+   ================= */
+
+.main-container {
+    padding: 1em;
+}
+
+.card-container {
+    margin: 1em auto;
+    min-width: 600px;
+    max-width: 750px;
+    border-bottom: 1px solid #DBDEF0;
+}
+
+.answer-container {
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.answer,
+.selected {
+    padding: .25em .75em;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #F5F7FB;
+    color: #293264;
+}
+
+.selected {
+    background: #D6DBF5;
+}
+
+.answer {
+    border: 1px solid #4D5B9E;
+}
+
+.opaque {
+    pointer-events: none;
+    opacity: .5;
+    border: 1px solid #4D5B9E;
+}
+
+.correct {
+    background: #94D7A2;
+    pointer-events: none;
+}
+
+.incorrect {
+    opacity: .5;
+    background: #F8BCBC;
+    pointer-events: none; 
+}
+
+/* =================
+   buttons
+   ================= */
+
+.intro-btn {
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+
+.game-btn,
+.intro-btn {
+    background: #4D5B9E;
+    font-weight: 600;
+    cursor: pointer;
+    color: #F5F7FB;
+    padding: .75em 2em;
+    border-radius: 10px;
+    border: none;
+    font-family: inherit;
+    min-width: 150px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 1em;
+}
+
+/* =================
+   Form
+   ================= */
+   
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .6em 1em;
+    color: #ffffff;
+    background-color: #383e4e;
+    border: 2px solid #f1f1f1;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    font-family: inherit;
+}
+
+/* =================
+   General Layout
+   ================= */
+
+.blob-container {
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.blue-blob {
+    position: absolute;
+    bottom: -100px;
+    left: -150px;
+    z-index: -1;
+}
+
+.yellow-blob {
+    position: absolute;
+    top: -175px;
+    right: -175px;
+    z-index: -1;
+}
+
+/* =================
+   media queries 
+   ================= */
+   
+@media (max-width: 500px) {
+    body {
+        font-size: .85rem;
+    }
+    
+    .answer-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .answer {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .card-container {
+        min-width: 325px;
+    }
+    
+    .game-btn {
+        font-size: .75rem;
+        min-width: 120px;
+    }
+    
+    .btn-container{
+        gap: .25em;
+        min-width: 325px;
+    }
+
+}
