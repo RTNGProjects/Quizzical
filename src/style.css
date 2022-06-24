@@ -41,7 +41,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 700px;
     padding: 0 .5em;
 }
 
@@ -55,7 +55,6 @@ p {
 
 .card-container {
     margin: 1em auto;
-    min-width: 600px;
     max-width: 750px;
     border-bottom: 1px solid #DBDEF0;
 }
@@ -128,7 +127,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
     gap: 1em;
 }
 
@@ -146,6 +144,12 @@ p {
     border-radius: 4px;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
     font-family: inherit;
+    
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
 }
 
 /* =================
@@ -208,7 +212,12 @@ p {
     
     .btn-container{
         gap: .25em;
-        min-width: 325px;
+        flex-direction: column;
+    }
+
+    .intro-btn {
+        margin-top: 1em;
+        font-size: 1rem;
     }
 
 }

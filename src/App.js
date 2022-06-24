@@ -61,15 +61,17 @@ export default function App() {
             <div className="btn-container">
                 <button className="intro-btn">Start Quiz</button>
             </div>
+
         </form>
-    
-    
+
     return (
         <div>
             {gameStart ? <Main allGameSettings={gameSettings} handleClick={handleSubmit} />  : 
             <div className="intro-container">
-                <h1 className="intro-title">Quizzical</h1>               
-                {formHtml}
+                <h1 className="intro-title">Quizzical</h1>
+                <div className="form-container">       
+                    {formHtml}
+                </div>
                 <div className="blob-container">
                     <img className="blue-blob"src={require("./images/intro-blue-blob.png")} alt="decorative blue blob" /> 
                     <img className="yellow-blob"src={require("./images/yellow-blob.png")} alt="decorative yellow blob" />
