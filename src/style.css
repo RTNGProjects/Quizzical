@@ -169,7 +169,7 @@ p {
 }
 
 .blue-blob {
-    position: absolute;
+    position: fixed;
     bottom: -100px;
     left: -150px;
     z-index: -1;
@@ -219,5 +219,9 @@ p {
         margin-top: 1em;
         font-size: 1rem;
     }
+
+    /* .blue-blob {
+        position: fixed;
+    } */
 
 }
